@@ -47,13 +47,14 @@ h1{
     height: 100%;
     width: 100%;
 
-    /* background-color: aquamarine; */
+    background-color: rgb(7, 2, 37);
     /* 親要素の左上を起点にして設定 */
     position: absolute;
     top: 0;
     left: 0;
 
     border-radius: 50%;
+    z-index: -1;
 }
 
 .outer-circle {
@@ -61,7 +62,7 @@ h1{
     width: 320px;
 
     background: conic-gradient(
-        rgb(43, 12, 217) 0,
+        rgb(12, 149, 217) 0,
         rgb(43,12,217) 40%,
         rgb(239, 238, 240) 40%,
         rgb(239,238,240) 60%,
@@ -69,4 +70,37 @@ h1{
         rgb(239,12,217) 100%
     );
     position: absolute;
+    top: -10px;
+    left: -10px;
+    border-radius: 50%;
+    /* 要素の重なりを決める。 */
+    z-index: -2;
+
+}
+.pointer-container {
+    width: 30px;
+    height: 190px;
+    /* background-color: rgb(198, 241, 56); */
+
+    position: absolute;
+    top: -40px;
+    
+    /* 回転軸を決める。 */
+    transform-origin: bottom center;
+    /* 回転させたいからアニメーションつけよう */
+    animation: rotate 7500ms linear forwards infinite;
+}
+.pointer {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
