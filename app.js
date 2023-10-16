@@ -8,6 +8,7 @@ let holdtime = totalTime/5;
 
 function meditateAnimation(){
         text.innerHTML ="inhale";
+        // classを追加
         container.className = "container big";
     // breatheTime分の時間が経過したらsetTimeoutを実行する。
     setTimeout(() => {
@@ -20,3 +21,5 @@ function meditateAnimation(){
     }, breatheTime);
 }
 meditateAnimation();
+
+setInterval(meditateAnimation,totalTime);

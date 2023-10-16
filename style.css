@@ -96,11 +96,41 @@ h1{
     background-color: white;
     border-radius: 50%;
 }
+.container.big{
+    animation: big 3s linear forwards;
+    /* 下でbigのアニメーション作成 */
+}
+.container.small{
+    animation: small 3s linear forwards;
+    /* 下でbigのアニメーション作成 */
+}
+
+
 @keyframes rotate {
     0% {
         transform: rotate(0deg);
     }
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@keyframes big {
+    0% {
+        /* roteteだと回っちゃうからそれ使うのも面白そう */
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+@keyframes small {
+    0% {
+        /* roteteだと回っちゃうからそれ使うのも面白そう */
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
     }
 }
