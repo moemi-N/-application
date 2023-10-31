@@ -2,7 +2,7 @@
 const container = document.querySelector(".container")
 const text = document.getElementById("text");
 
-let totalTime = 7500;
+let totalTime = 8000;
 let breatheTime = (totalTime/5)*2;
 let holdtime = totalTime/5;
 

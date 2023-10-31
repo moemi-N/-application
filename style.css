@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-</style>
 
 *{
     font-family: 'Courier New', Courier, monospace;
@@ -39,7 +38,9 @@ h1{
 }
 
 #text{
+    position: absolute;
     font-size: 1.3rem;
+    padding: 8rem;
 }
 
 .circle{
