@@ -10,7 +10,7 @@
 
 body{
     height      : 100vh;
-    background  : url("./image/milky-way-2695569_1280\ \(1\).jpg");
+    background  : url("./image/milky.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
